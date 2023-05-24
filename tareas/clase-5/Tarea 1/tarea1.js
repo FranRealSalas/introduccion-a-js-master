@@ -8,5 +8,6 @@ document.querySelector("#calcularsalario").onclick = function(){
 }
 
 function calcularSalarioMensual(salario){
-    return salario / 12;
+    const meses = 12
+    return salario / meses;
 }

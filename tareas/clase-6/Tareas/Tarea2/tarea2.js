@@ -33,7 +33,6 @@ document.querySelector("#calcular").onclick = function (event){
 }
 
 
-
 function agregarSalario(indice){
     const $div = document.createElement("div");
     $div.className = "input-salario";
@@ -43,6 +42,7 @@ function agregarSalario(indice){
     const $input = document.createElement("input");
     $input.type = "number";
     $input.className = "salarios-input";
+    $input.min = "0";
 
     $div.appendChild($label);
     $div.appendChild($input);

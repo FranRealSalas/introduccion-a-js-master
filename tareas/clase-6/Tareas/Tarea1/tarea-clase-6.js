@@ -52,9 +52,10 @@ function crearIntegrante(indice){
     $div.className = "integrantes";
 
     const $label = document.createElement("label");
-    $label.textContent = `Integrante numero ${indice+1}`;
+    $label.textContent = `Edad del integrante numero ${indice+1}`;
     const $input = document.createElement("input");
     $input.type = "number";
+    $input.min = "0";
 
     $div.appendChild($label);
     $div.appendChild($input);
